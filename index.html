@@ -6,19 +6,31 @@
     <title>Timer</title>
     <link rel="stylesheet" href="index.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <div class="d-flex justify-content-center">
+    <div class="text-center text-white mb-2 h5">
+        TryoTimer <i class="bi bi-stopwatch"></i>
+    </div>
+    <div class="d-flex justify-content-center mb-2">
         <div class="card bg-body-tertiary rounded-3 shadow-1 border-0 p-4 m-1 bg__transparent" style="width: 20rem;">
             <div id="timerDisplay" style="font-family: monospace;" class="text-center display-5 mb-3 fw-bold">00:00:00</div>
             <div class="btn-group gap-2 justify-content-center" role="group">
-                <button id="stopBtn" class="btn__outline__red">Stop</button>
-                <button id="resetBtn" class="btn__outline__dark">Reset</button>
-                <button id="startBtn" class="btn__outline__blue">Start</button>
+                <button id="stopBtn" class="btn__outline__red rounded-3">Stop</button>
+                <button id="resetBtn" class="btn__outline__dark rounded-3">Reset</button>
+                <button id="startBtn" class="btn__outline__blue rounded-3">Start</button>
             </div>
         </div>
     </div>
-    <h5 class="text-center text-white" id="currentTime"></h5>
+    <div class="d-flex justify-content-center mb-2">
+        <div style="width: 20rem;" class="rounded-3 bg-body-tertiary p-4 justify-content-center text-center">
+            <h5 class="mb-0" id="currentTime"></h5>
+        </div>
+    </div>
+    <div style="font-size: 0.9rem;" class="mt-auto text-white text-center ">
+        created by <a class="link" href="https://github.com/Tryo8">Tryo8</a>
+    </div>
+    
 
 </body>
 </html>
