@@ -1,0 +1,156 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    position: relative;
+    background-image: url('./assets/shoppingMall2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+body::before {
+    content: '';
+    position: fixed; 
+    inset: 0; 
+    background-color: rgba(30, 30, 30, 0.549); 
+    z-index: -1;
+}
+
+.btn__outline__blue{
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    background-color: #8e0cff0a;
+    justify-content: center;
+    align-items: center;
+    color: #0c5dff;
+    border-radius:100vw;
+    line-height: 1;
+    padding: 0.9rem 1.6rem;
+    display: inline-flex ; 
+    border: 1px solid #0c5dffb1;
+    font-size: 0.9rem;
+    font-weight: 700;
+    &:hover{
+        background-color:#0c59ff16 ;
+        &::before {
+            animation: waterEffect 0.5s 1 ease;
+        } 
+    }
+    &.ripple::before {
+        animation: waterEffect 0.7s ease;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        background: rgba(82, 82, 82, 0.282);
+        transform: translate(-50%, -50%);
+    }
+    &:active{
+        background-color:#0c8eff2d ;
+    }   
+}
+.btn__outline__dark{
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    background-color: #1818180a;
+    justify-content: center;
+    align-items: center;
+    color: #181818e2;
+    border-radius:100vw;
+    line-height: 1;
+    padding: 0.9rem 1.6rem;
+    display: inline-flex ; 
+    border: 1px solid #1c1c1cb1;
+    font-size: 0.9rem;
+    font-weight: 700;
+    &:hover{
+        background-color:#1d1d1d16 ;
+        &::before {
+            animation: waterEffect 0.5s 1 ease;
+        } 
+    }
+    &.ripple::before {
+        animation: waterEffect 0.7s ease;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        background: rgba(82, 82, 82, 0.282);
+        transform: translate(-50%, -50%);
+    }
+    &:active{
+        background-color:#0c8eff2d ;
+    }   
+}
+.btn__outline__red{
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    background-color: #ff2c0c0a;
+    justify-content: center;
+    align-items: center;
+    color: #ee3013e5;
+    border-radius:100vw;
+    line-height: 1;
+    padding: 0.9rem 1.6rem;
+    display: inline-flex ; 
+    border: 1px solid #f627078c;
+    font-size: 0.9rem;
+    font-weight: 700;
+    &:hover{
+        background-color:#ff2c0c29 ;
+        &::before {
+            animation: waterEffect 0.5s 1 ease;
+        } 
+    }
+    &.ripple::before {
+        animation: waterEffect 0.7s ease;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        background: rgba(82, 82, 82, 0.282);
+        transform: translate(-50%, -50%);
+    }
+    &:active{
+        background-color:#0c8eff2d ;
+    }   
+}
+
+
+@keyframes waterEffect {
+    0% {
+        width: 0;
+        height: 0;
+        opacity: 0.5;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        width: 500px;
+        height: 500px;
+        opacity: 0;
+    }
+}
