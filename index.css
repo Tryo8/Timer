@@ -59,6 +59,7 @@ body::before {
         background-color:#0c8eff2d ;
     }   
 }
+
 .btn__outline__dark{
     overflow: hidden;
     position: relative;
@@ -95,9 +96,10 @@ body::before {
         transform: translate(-50%, -50%);
     }
     &:active{
-        background-color:#0c8eff2d ;
+        background-color:#3030302d ;
     }   
 }
+
 .btn__outline__red{
     overflow: hidden;
     position: relative;
@@ -134,11 +136,15 @@ body::before {
         transform: translate(-50%, -50%);
     }
     &:active{
-        background-color:#0c8eff2d ;
+        background-color:#ff2c0c3c ;
     }   
 }
 
-
+.link{
+    color: #ffffff;
+    text-decoration: underline;
+    
+}
 @keyframes waterEffect {
     0% {
         width: 0;
